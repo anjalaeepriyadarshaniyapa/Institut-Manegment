@@ -1,0 +1,378 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="js/vendor/slick/slick.css"/>
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a title="" class="navbar-brand no-pointer">
+          <img role="img" alt="" title="" src="img/fci-logo.svg" class="logo">
+        </a>
+
+        <div class="navbar-wrapper">
+          <div class="menu-main-menu-container">
+            <ul id="menu-main-menu" class="navbar-nav">
+              <li class="menu-item">
+                <a title="About Us" href="about-us.html" class="nav-link">About Us</a>
+              </li>
+              <li class="menu-item">
+                <a title="Our Programs" href="programs.html" class="nav-link">Our Programs</a>
+              </li>
+              <li class="menu-item">
+                <a title="Contact Us" href="contact-us.html" class="nav-link">Contact Us</a>
+              </li>
+              <li class="menu-item">
+                <a title="Why us" href="why_us.html" class="nav-link">Why Us</a>
+              </li>
+              <li class="menu-item">
+                <a title="Our Staff" href="team.html" class="nav-link">Our Staff</a>
+              </li>
+              <li class="menu-item">
+                <a title="FAQ" href="FQA.html" class="nav-link">FAQ</a>
+              </li>
+              <li class="menu-item">
+                <a title="Login" class="nav-button">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </nav>
+      <div class="login-wrapper">
+        <div class="login-inner">
+          <div class="login-content">
+            <span class="close">x</span>
+            <form action="" type="post">
+              <div class="top-wrapper">
+                <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+                <input id="psw" type="password" placeholder="Enter Password" name="psw" required>
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#forgetPasswordModal" data-whatever="@getbootstrap" > Reset Password</button>
+              
+
+              
+              
+              
+              
+              
+              
+                <!-- <button class="btn" onclick="document.location='forget_pw.html'">  REGISTER HERE</button> -->
+                <!-- <span class="psw">Forgot <a href="forget_pw.html">password?</a></span> -->
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+  </header>
+  <!-- <div class="modal fade" id="forgetPasswordModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">E mail :</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Reset Password</button>
+        </div>
+      </div>
+    </div>
+  </div>  -->
+  <div class="login-wrapper">
+    <div class="login-inner">
+      <div class="login-content">
+        <span class="close">x</span>
+        <form action="" type="post">
+          <div class="top-wrapper">
+            <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+            <input id="psw" type="password" placeholder="Enter Password" name="psw" required>
+            <button type="submit" class="btn">Cancel</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#forgetPasswordModal" data-whatever="@getbootstrap" > Reset Password</button>
+          
+
+          
+          
+          
+          
+          
+          
+            <!-- <button class="btn" onclick="document.location='forget_pw.html'">  REGISTER HERE</button> -->
+            <!-- <span class="psw">Forgot <a href="forget_pw.html">password?</a></span> -->
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <main>
+    <section class="banner">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="column">
+            <div class="slider">
+              <div class="slide">
+                <span class="bg-span" style="background-image: url('img/home-main-banner-.png');"></span>
+                <div class="banner-content">
+                  <div class="left-content col-6 d-flex flex-column justify-content-center">
+                    <h1 class="banner-title">
+                      First Choice Institute made easy.
+                    </h1>
+                    <p>
+                      First Choice Institute keeps you on the cutting edge of public sector risk today.
+                    </p>
+					  <div class="btn-wrapper">
+              <button class="btn" onclick="document.location='register.html'">  REGISTER HERE</button>
+                      <!-- <span class="btn">
+                        REGISTER HERE
+                      </span> -->
+                    </div>
+                  </div>
+                  <div class="right-content col-6 d-flex flex-column">
+                    <img role="img" alt="" title="" src="img/home-banner-person.png" class="banner-img">
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <span class="bg-span" style="background-image: url('img/home-main-banner-.png');"></span>
+                <div class="banner-content">
+                  <div class="left-content col-6 d-flex flex-column justify-content-center">
+                    <h1 class="banner-title">
+                      Big Ideas, Small Setting.
+                    </h1>
+                    <p>
+                      Become a Member and get started with your benefits!.
+                    </p>
+                    
+                  </div>
+                  <div class="right-content col-6 d-flex flex-column">
+                    <img role="img" alt="" title="" src="img/student.png" class="banner-img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="important">
+      <div class="container">
+        <div class="row">
+          <div class="column col-4 image-content">
+            <img role="img" alt="" title="" src="img/talk.jpg" class="column-image">
+            <h6>What’s New</h6>
+            <p>Acceptance of Liability Process - Technical Contracts</p>
+            <a href="#" class="read-more">READ MORE</a>
+          </div>
+          <div class="column col-4 image-content">
+            <img role="img" alt="" title="" src="img/light.jpg" class="column-image">
+            <h6>Upcoming Events</h6>
+            <p>Law Enforcement Liability Issues</p>
+            <a href="#" class="read-more">READ MORE</a>
+          </div>
+          <div class="column col-4 image-content">
+            <img role="img" alt="" title="" src="img/std.jpg" class="column-image">
+            <h6>Join Membership</h6>
+            <p>Become a Member and get started with your benefits!</p>
+            <a href="#" class="read-more">JOIN</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="img-contents">
+      <div class="container">
+        <div class="row">
+          <div class="column col-6 left-content d-flex flex-column justify-content-center">
+            <h2>
+              Talk With US
+            </h2>
+            <p>Get quick feedback on issues that are important to you in your work.
+              Keep your finger on the pulse of Education by using Talk today!</p>
+          </div>
+          <div class="column col-6  right-content">
+            <div class="image-gird">
+              <div class="img-wrapper">
+                <img role="img" alt="" title="" src="img/grid/1.jpg" class="grid-img">
+              </div>
+              <div class="img-wrapper">
+                <img role="img" alt="" title="" src="img/grid/2.jpg" class="grid-img">
+              </div>
+              <div class="img-wrapper">
+                <img role="img" alt="" title="" src="img/grid/3.jpg" class="grid-img">
+              </div>
+              <div class="img-wrapper">
+                <img role="img" alt="" title="" src="img/grid/4.jpg" class="grid-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="partners">
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <h2 class="section-title">Our Partners</h2>
+            <div class="logo-slider">
+              <div class="slide-wrapper">
+                <div class="slide">
+                  <img role="img" alt="" title="" src="img/partners/alliant.png" class="partner-logo">
+                </div>
+              </div>
+              <div class="slide-wrapper">
+                <div class="slide">
+                  <img role="img" alt="" title="" src="img/partners/gallagher.jpg" class="partner-logo">
+                </div>
+              </div>
+              <div class="slide-wrapper">
+                <div class="slide">
+                  <img role="img" alt="" title="" src="img/partners/munich.jpg" class="partner-logo">
+                </div>
+              </div>
+              <div class="slide-wrapper">
+                <div class="slide">
+                  <img role="img" alt="" title="" src="img/partners/midwest.jpg" class="partner-logo">
+                </div>
+              </div>
+              <div class="slide-wrapper">
+                <div class="slide">
+                  <img role="img" alt="" title="" src="img/partners/sedgwick.png" class="partner-logo">
+                </div>
+              </div>
+              <div class="slide-wrapper">
+                <div class="slide">
+                  <img role="img" alt="" title="" src="img/partners/travelers.jpg" class="partner-logo">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="column top-column">
+          <a title="" class="navbar-brand no-pointer">
+            <img role="img" alt="" title="" src="img/fci-footer-logo.svg" class="logo">
+          </a>
+
+          <div class="contact-details">
+            <address>
+              <a href="https://www.google.com/maps/place/University+of+Colombo/@6.9000149,79.8587938,15z/data=!4m5!3m4!1s0x0:0x45a4b0e7834ac0d4!8m2!3d6.9000149!4d79.8587938" target="_blank">
+                College House,<br/>94 Kumaratunga Munidasa Mawatha,<br/>Colombo.
+              </a>
+            </address><br/>
+            <span class="tel">T: <a href="tel:+940000000000">+94 000 000 0000</a></span><br/>
+            <span class="fax">F: +94 000 000 0000</span><br/>
+            <span class="email">E: <a href="mailto:test@gmail.com">test@gmail.com</a></span>
+          </div>
+
+          <nav class="navbar">
+            <div class="navbar-wrapper">
+              <div class="menu-main-menu-container">
+                <ul id="menu-footer-menu" class="navbar-nav">
+                  <li class="menu-item">
+                    <a title="About Us" href="about-us.html" class="nav-link">About Us</a>
+                  </li>
+                  <li class="menu-item">
+                    <a title="Our Programs" href="programs.html" class="nav-link">Our Programs</a>
+                  </li>
+                  <li class="menu-item">
+                    <a title="Contact Us" href="contact-us.html" class="nav-link">Contact Us</a>
+                  </li>
+                  <li class="menu-item">
+                    <a title="Why Us" href="why_us.html" class="nav-link">Why Us</a>
+                  </li>
+                  <li class="menu-item">
+                    <a title="Our Staff" href="team.html" class="nav-link">Our Staff</a>
+                  </li>
+                  <li class="menu-item">
+                    <a title="FAQ" href="FQA.html" class="nav-link">FAQ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <div class="social-share">
+            <ul class="navbar-nav">
+              <li class="menu-item">
+                <a title="Facebook" href="http://www.facebook.com" class="nav-link">
+                  <img role="img" alt="" title="" src="img/facebook.svg" class="logo">
+                </a>
+              </li>
+              <li class="menu-item">
+                <a title="linkedIn" href="http://linkedin.com" class="nav-link">
+                  <img role="img" alt="" title="" src="img/linkedin.svg" class="logo">
+                </a>
+              </li>
+              <li class="menu-item">
+                <a title="Twitter" href="http://twitter.com" class="nav-link">
+                  <img role="img" alt="" title="" src="img/twitter.svg" class="logo">
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="column bottom-column">
+          © 2021 . All Rights Reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/vendor/jquery-3.6.0.min.js"></script>
+  <script src="js/vendor/slick/slick.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+section {
+  padding: 40px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.sub-page {
+  margin-top: 125px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.container-fluid {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.column {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  width: 100%;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.center-content {
+  text-align: center;
+}
+
+.small-width {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+h1,
+.banner-title{
+  font-size: 3.5em;
+  margin: 0 0 35px;
+}
+h2 {
+  font-size: 2em;
+}
+p,
+li{
+  line-height: 1.5;
+}
+
+.no-pointer {
+  pointer-events: none;
+}
+
+.d-flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-column {
+  flex-flow: column;
+}
+
+.col-6 {
+  flex : 0 0 50%;
+  max-width: 50%;
+}
+.col-4 {
+  flex : 0 0 33.33333%;
+  max-width: 33.33333%;
+}
+
+.slick-slide img {
+  max-width: 100%;
+}
+section .slick-track {
+  display: flex;
+  align-items: stretch;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #000;
+}

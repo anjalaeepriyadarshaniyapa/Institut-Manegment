@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Why Choose Us Section Design With Bootstrap</title>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+  	<!-- Bootstrap CSS -->
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="js/vendor/slick/slick.css"/>
+  <link rel="stylesheet" href="css/main.css">
+
+  	<!-- Bootstrap JS -->
+  	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+        .why-us h2 {
+            position: relative;
+            margin-bottom: 35px;
+        }
+        .why-us h2::after {
+            content: "";
+            width: 120px;
+            height: 3px;
+            display: inline-block;
+            background: #FFC107;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            bottom: -20px;
+            margin: 0 auto;
+        }
+        
+        .why-us .box {
+            padding: 50px 30px;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.10);
+            transition: 0.5s;
+            position: relative;
+            background-color: #333;
+            max-height: 230px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+        .why-us .box:hover {
+            padding: 30px 30px 70px 30px;
+            box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.20);
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        .why-us .box img {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0;
+            transition:all ease 1s; 
+        }
+        .why-us .box:hover img {
+            opacity: 1;
+        }
+        .why-us .box span {
+            display: block;
+            font-size: 56px;
+            font-weight: 700;
+            color: #6b6060;
+            position: absolute;
+            right: 10px;
+            top: 0px;
+            line-height: normal;
+        }
+        .why-us .box h4 a {
+            font-size: 24px;
+            font-weight: 600;
+            padding: 0;
+            margin: 20px 0;
+            color: #dadada;
+            text-decoration: none;
+        }
+        .why-us .box p {
+            color: #aaaaaa;
+            font-size: 15px;
+            margin: 0;
+            padding: 0;
+        }
+        .why-us .box:hover span,
+        .why-us .box:hover h4 a,
+        .why-us .box:hover p {
+              color: #fff;
+        }
+        </style>
+        
+</head>
+<body>
+    <header class="header">
+    <div class="container">
+     
+      <nav class="navbar ">
+        <a title="" class="navbar-brand no-pointer">
+          <img role="img" alt="" title="" src="img/fci-logo.svg" class="logo">
+        </a>
+
+        
+        <div class="navbar-wrapper">
+          <div class="menu-main-menu-container"> 
+            <div id="menu-main-menu" class="navbar-nav">
+            <div class="row"> 
+              <div class="menu-item" style="width: 80px; margin-right: 20px;">
+                <a title="About Us" href="about-us.html" class="nav-link">About Us</a>
+              </div>
+              <div class="menu-item" style="width: 100px; margin-right: 20px;">
+                <a title="Our Programs" href="programs.html" class="nav-link">Our Programs</a>
+              </div>
+              <div class="menu-item" style="width: 100px; margin-right: 20px;">
+                <a title="Contact Us" href="contact-us.html" class="nav-link">Contact Us</a>
+              </div>
+              <div class="menu-item" style="width: 80px; margin-right: 20px;">
+                <a title="Why us" href="why_us.html" class="nav-link">Why Us</a>
+              </div>
+              <div class="menu-item" style="width: 80px; margin-right: 20px;">
+                <a title="Our Staff" href="team.html" class="nav-link">Our Staff</a>
+              </div>
+              <div class="menu-item" style="width: 80px; margin-right: 20px;">
+                <a title="FAQ" href="FQA.html" class="nav-link">FAQ</a>
+              </div>
+              <div class="menu-item" style="width: 80px; margin-right: 20px;">
+                <a title="Login" class="nav-button">Login</a>
+              </div>
+             </div>
+         </div>
+        </div> 
+        </div>
+
+       </nav>
+     
+
+      
+      <div class="login-wrapper">
+        <div class="login-inner">
+          <div class="login-content">
+            <span class="close">x</span>
+            <form action="" type="post">
+              <div class="top-wrapper">
+                <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+                <input id="psw" type="password" placeholder="Enter Password" name="psw" required>
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap" > Reset Password</button>
+              
+                 
+   
+              
+                <!-- <button class="btn" onclick="document.location='forget_pw.html'">  REGISTER HERE</button> -->
+                <!-- <span class="psw">Forgot <a href="forget_pw.html">password?</a></span> -->
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>.
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <div class="form-group">
+                              <label for="recipient-name" class="col-form-label">E mail :</label>
+                              <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Reset Password</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+      
+    </div>
+    </header>
+
+	<!-- Why Us Section -->
+	<section class="why-us">
+		<div class="container" style="margin-top: 150px;">
+
+      <div class="row">
+          <div class="column">
+            <h1 class="section-title"><b>Why Choose Us</b></h1>
+          </div>
+        </div>
+
+      <br><br>          
+            
+			<div class="row">
+				<div class="col-sm-6 col-lg-4">
+					<div class="box">
+						<span>01</span>
+						<h4><a href="#">Research focus</a></h4>
+						<p>universities, some do a broad range of research, while others focus on one or two niche areas. </p>
+						<img src="img/one.jpg" alt="">
+					</div>
+				</div>
+                
+                
+				<div class="col-sm-6 col-lg-4">
+					<div class="box">
+						<span>02</span>
+						<h4><a href="#">Teaching quality</a></h4>
+						<p>Teaching quality differs from institution to institution, and some will always be stronger.<br><br></p>
+						<img src="img/two.jpg" alt="">
+					</div>
+				</div>
+                
+                
+				<div class="col-sm-6 col-lg-4">
+					<div class="box">
+						<span>03</span>
+						<h4><a href="#">Graduate outcomes</a></h4>
+						<p>Graduate employment rates and starting salaries vary depending on the field, the institution and the location.</p>
+						<img src="img/three.jpg" alt="">
+					</div>
+				</div>
+                
+				<div class="col-sm-6 col-lg-4">
+					<div class="box">
+						<span>04</span>
+						<h4><a href="#">International experiences</a></h4>
+						<p>offers international exchange, study abroad and study tour opportunities or has an overseas campus.</p>
+						<img src="img/four.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-lg-4">
+					<div class="box">
+						<span>05</span>
+						<h4><a href="#">Entry flexibility and credit
+                        </a></h4>
+						<p>Institution entry requirements are also likely to be a deal breaker. Each institution has its own entry requirements, </p>
+						<img src="img/five.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-lg-4">
+					<div class="box">
+						<span>06</span>
+						<h4><a href="#">Facilities</a></h4>
+						<p> Institutions will differ with respect to the creature comforts on offer, such as sporting facilities, student residences, </p>
+						<img src="img/six.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Why Us Section -->
+
+     <footer>
+      <div class="container-fluid">
+      <div class="row">
+        <div class="column top-column">
+          <a title="" class="navbar-brand no-pointer">
+            <img role="img" alt="" title="" src="img/fci-footer-logo.svg" class="logo">
+          </a>
+
+          <div class="contact-details">
+            <address>
+              <a href="https://www.google.com/maps/place/University+of+Colombo/@6.9000149,79.8587938,15z/data=!4m5!3m4!1s0x0:0x45a4b0e7834ac0d4!8m2!3d6.9000149!4d79.8587938" target="_blank">
+                College House,<br/>94 Kumaratunga Munidasa Mawatha,<br/>Colombo.
+              </a>
+            </address><br/>
+            <span class="tel" style="margin-bottom: 10px;">T: <a href="tel:+940000000000">+94 000 000 0000</a></span>
+            <span class="fax" style="margin-bottom: 10px;">F: +94 000 000 0000</span>
+            <span class="email">E: <a href="mailto:test@gmail.com">test@gmail.com</a></span>
+          </div>
+
+          <nav class="navbar">
+            <div class="navbar-wrapper">
+              <div class="menu-main-menu-container">
+                <div id="menu-footer-menu" class="navbar-nav">
+                <div class="row">
+                  <div class="col-2 menu-item" style="width: 100px;">
+                    <a title="About Us" href="about-us.html" class="nav-link">About Us</a>
+                  </div>
+                  <div class="col-2 menu-item" style="width: 130px;">
+                    <a title="Our Programs" href="programs.html" class="nav-link">Our Programs</a>
+                  </div>
+                  <div class="col-2 menu-item" style="width: 100px;">
+                    <a title="Contact Us" href="contact-us.html" class="nav-link">Contact Us</a>
+                  </div>
+                  <div class="col-2 menu-item" style="width: 100px;">
+                    <a title="Why Us" href="why_us.html" class="nav-link">Why Us</a>
+                  </div>
+                  <div class="col-2 menu-item" style="width: 100px;">
+                    <a title="Our Staff" href="team.html" class="nav-link">Our Staff</a>
+                  </div>
+                  <div class="col-2 menu-item" style="width: 100px;">
+                    <a title="Why Us" href="FQA.html" class="nav-link">FAQ</a>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <div class="social-share">
+            <div class="navbar-nav">
+            <div class="row">
+              <div class="col-4 menu-item">
+                <a title="Facebook" href="http://www.facebook.com" class="nav-link">
+                  <img role="img" alt="" title="" src="img/facebook.svg" class="logo">
+                </a>
+              </div>
+              <div class="col-4 menu-item">
+                <a title="linkedIn" href="http://linkedin.com" class="nav-link">
+                  <img role="img" alt="" title="" src="img/linkedin.svg" class="logo">
+                </a>
+              </div>
+              <div class="col-4 menu-item">
+                <a title="Twitter" href="http://twitter.com" class="nav-link">
+                  <img role="img" alt="" title="" src="img/twitter.svg" class="logo">
+                </a>
+              </div>
+            </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="column bottom-column">
+          © 2021 . All Rights Reserved.
+        </div>
+      </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
